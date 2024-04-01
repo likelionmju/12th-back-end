@@ -1,0 +1,54 @@
+body{
+  margin: 2% auto;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navList {
+  padding: 0;
+  display: flex;
+  list-style: none; 
+  font-size: 120%;
+}
+.navList li{
+  padding: 0 3%;
+}
+.navList li:hover{
+  cursor: pointer;
+  color: #1864ab;
+}
+
+section{
+  text-align: center;
+  border: solid 1px cornflowerblue;
+}
+
+#favorite, #contact{
+  border-top: solid 1px cornflowerblue;
+}
+
+#contact ul{
+  list-style: none;
+  padding: 0;
+}
+#contact li{
+  margin: 2%;
+}
+
+.title{
+  color: #1864ab;
+  font-weight: bold;
+  padding: 0.7%;
+  border-bottom: solid 1px cornflowerblue;
+}
+.content{
+  padding: 3%;
+}
+
+#phoneLogo, #githubLogo, #instaLogo{
+  margin-right: 1%;
+}

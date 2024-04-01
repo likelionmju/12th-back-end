@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.banner {
+    height: 20vh;
+    background-color: blue
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner > div {
+    color: white;
+    font-size: 2rem;
+}
+
+.box {
+    display: inline-flex;
+    width: 100vw;
+    height: 80vh;
+}
+
+.box > .halfDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;    
+}
+
+#left {
+    background-color: grey;
+    font-size: 2rem;
+    color: brown
+}
+
+#right {
+    font-size: larger;
+    color: grey;
+}
+nav > img {
+   width: 60px;
+}

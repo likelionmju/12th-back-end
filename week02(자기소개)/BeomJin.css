@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+}
+
+.banner {
+    height: 8vh;
+    background-color: white
+    ;
+    display: flex;
+    align-content: center;
+    justify-content: right;
+}
+
+
+.box {
+    display: inline-flex;
+    width: 100vw;
+    height: 80vh;
+}
+
+.box > .halfDiv {
+    display: flex;
+   
+    width: 50%;    
+}
+
+#left {
+    background-color: white;
+    font-family: 'Ownglyph_meetme-Rg' , sans-serif;
+    font-size: 2rem;
+    width: 20%;
+    
+}
+
+#right {
+    background-color: navy;
+    font-family: 'Ownglyph_meetme-Rg' , sans-serif;
+    font-size: 2rem;
+    color: white;
+    width: 80%;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+}
+img {
+   width: 20px;
+}
+ul{
+    list-style: none;
+}
+.name{
+    font-family: 'WAGURITTF', sans-serif;
+    font-size: 2rem;
+}
+#mb{
+    color: blue
+}
+#food{
+    color: red;
+}
+a{
+    color:black;
+    text-decoration-line: none;
+}

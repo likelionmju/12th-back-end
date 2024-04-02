@@ -84,7 +84,7 @@ body, ul, li {
   
   /* 사이트의 높이를 5000px로 만들어 스크롤 생성 */
   body {
-    background-color: #4186ae;
+    background-color: #8cc7e9;
   }
   
   /* 사이드바의 너비와 높이를 변수를 통해 통제 */
@@ -127,7 +127,7 @@ body, ul, li {
 
   /* ---------------------------------------------------[Main Page Img]------------------------------------------------- */
 #main_page_img{
-  height: 900px;
+  /* height: 900px; */
   display: flex;
   padding-top: 2.5%;
   padding-left: 15%;
@@ -140,6 +140,10 @@ body, ul, li {
   width:  500px;
   height: 750px;
   border: 5px double powderblue;
+}
+
+.basic_info{
+  display: flex;
 }
 
 .basic_info_Q{
@@ -164,6 +168,16 @@ body, ul, li {
 
 .want_tall{
   font-size: 15px;
+}
+
+.logo{
+  padding: 40px 0px 0px 3vw;
+  width: 80px;
+  height: 80px;
+}
+
+.click_please{
+  padding: 0px 0px 15vh 15%;
 }
 
 /* ---------------------------------------------------[Main Page 2]------------------------------------------------- */
@@ -213,13 +227,14 @@ body, ul, li {
   padding-top: 0.5%;
   margin-left: 15%;
   margin-right: 15%;
-  border: 5px solid black;
+  /* border: 5px solid black; */
 
 }
 
 .hoby_menu{
   display: flex;
   justify-content: space-between; /*main-nav안 요소 가로정렬*/
+  padding-top: 1%;
 }
 
 .hoby{
@@ -233,6 +248,19 @@ body, ul, li {
   height: 400px;
 }
 
+.hoby:hover > .hoby_img{
+  width: 270px;
+  height: 350px;
+}
+
 .hoby_topic{
-  padding-top: 0px;
+  font-size: 25px;
+  padding-top: 3px;
+  padding-left: 5px;
+}
+
+.hoby_img{
+  padding-left: 10px;
+  width: 200px;
+  height: 260px;
 }

@@ -1,0 +1,78 @@
+#app {
+    width: 500px;
+    margin: auto;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+
+}
+/* main */
+
+.feed{
+    width: 500px;
+    height: 70px;
+    border: 1px solid #999;
+    display: inline-block;
+    text-align: left;
+}
+.profile{
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+
+.feed img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.profile p{
+    color: black;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 2px;
+}
+.profile span{
+    color: black;
+    font-size: 11px;
+    font-weight: bold;
+    vertical-align: left;
+    padding-top: 5px;
+}
+.imgContainer {
+    border: 1px solid #999; 
+
+}
+
+.iconContainer{
+    padding: 10px;
+    width: 500px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    /* background: black; */
+}
+.iconContainer p{
+    margin-top: 1%;
+}
+
+.textbox{
+
+    /* background: purple; */
+}
+
+ul.txt {
+    text-align: left;
+}
+
+.highlight {
+    color: blue; /* 텍스트 색상을 파란색으로 변경합니다 */
+}
+

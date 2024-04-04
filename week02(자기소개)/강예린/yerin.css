@@ -1,0 +1,119 @@
+.gamja-flower-regular {
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+span{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.main{
+    margin-left: 50px;
+}
+p{
+    font-family: "Gamja Flower", sans-serif;
+    color: black;
+    margin-left: 60px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 200;
+    font-size: 25px;
+    padding: 1px;
+}
+
+.intro{
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 215, 221);
+}
+.kitty1{
+    width: 50px;
+    background-color: rgb(255, 215, 221);
+    margin-left: 40px;
+}
+.kitty2{
+    width: 50px;
+    background-color: rgb(255, 215, 221);
+    margin-right: 40px;
+}
+h1{
+    font-family: "Gamja Flower", sans-serif;
+    color: black;
+    margin-left: 50px;
+}
+.me {
+    width: 200px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 10px;
+    text-decoration-line: none;  
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;  
+}
+li{
+    margin-right: 100px;
+}
+div{
+    display: flex;
+    margin-left: 200px;
+    justify-content: space-between;
+}
+
+.tmi{
+    margin-top: 30px;
+    text-align: center;
+}
+.tmi1{
+    margin-right: 10px;
+    justify-content: center;
+}
+.HL{
+    width: 250px;
+    height: 200px;
+}
+.main2{
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+
+li:hover{
+    color: rgb(239, 139, 255);
+}
+li a:hover{
+    color:  rgb(239, 139, 255);
+}
+
+button>a{
+    color: rgb(255, 255, 255);
+align-items: center;
+}
+
+button{
+    display: flex;
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 40px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+
+
+}
+.git{
+    width: 20px;
+}

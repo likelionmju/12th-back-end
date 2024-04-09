@@ -1,9 +1,9 @@
-package rorcp_5;
 import java.util.Scanner;
-public class backj1 {
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+public class beakj14681 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         int a = sc.nextInt();
         int b = sc.nextInt();
@@ -25,6 +25,7 @@ public class backj1 {
                 System.out.print(3);
             }
         }
+
     }
 
 }

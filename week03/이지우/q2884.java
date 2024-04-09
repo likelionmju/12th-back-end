@@ -6,17 +6,18 @@ public class q2884 {
         Scanner scanner = new Scanner(System.in);
         int hour = scanner.nextInt();
         int min = scanner.nextInt();
-        if(min>45){
+        if(min>=45){
             System.out.print(hour+" ");
             System.out.print(min-45);
         }
-        else if(hour==23 && min<45){
-                System.out.print(hour-1+" ");
-                System.out.print(60-(45-min));
+        else if(hour==0 && min<=45){
+        		hour = 23;
+                System.out.print(hour+" ");
+                System.out.print(min-45+60);
             }
-        else if(min<45){
-            System.out.print(hour-1+24+" ");
-            System.out.print(60-(45-min));
+        else if(hour != 0 && min<=45){
+            System.out.print(hour-1+" ");
+            System.out.print(min-45+60);
             
         }
         scanner.close();

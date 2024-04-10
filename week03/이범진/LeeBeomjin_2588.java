@@ -2,7 +2,7 @@ package week03;
 
 import java.util.Scanner;
 
-public class LeeBeomjin2588 {
+public class LeeBeomjin_2588 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

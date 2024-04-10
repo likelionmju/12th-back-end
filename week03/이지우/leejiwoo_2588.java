@@ -1,6 +1,6 @@
-package 백준;
+
 import java.util.Scanner;
-public class q2588 {
+public class leejiwoo_2588 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

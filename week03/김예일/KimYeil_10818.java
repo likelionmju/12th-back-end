@@ -2,7 +2,7 @@ package week03;
 
 import java.util.Scanner;
 
-public class Week03_10818 {
+public class KimYeil_10818 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int count = sc.nextInt();

@@ -2,7 +2,7 @@ package week03;
 
 import java.util.Scanner;
 
-public class Week03_2884 {
+public class KimYeil_2884 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int hour = sc.nextInt();

@@ -2,7 +2,7 @@ package week03;
 
 import java.util.Scanner;
 
-public class Week03_14681 {
+public class KimYeil_14681 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();

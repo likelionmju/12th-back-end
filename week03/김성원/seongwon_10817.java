@@ -1,5 +1,5 @@
 import java.util.*;
-public class bj5{
+public class seongwon_10817{
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
 

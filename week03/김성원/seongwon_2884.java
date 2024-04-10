@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class bj4{
+class seongwon_2884{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();

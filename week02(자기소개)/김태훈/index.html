@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./CSS/myself.CSS" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>It's me</title>
+
+<!-- 수정사항: 사이드바 위치 이동 애매함, 인적사항 부분 화면 비율에 따라 깨짐 -->
+
+  
+</head>
+
+
+<body>
+  <!-- -----------------------------------------------------[nav bar]------------------------------------------------------ -->
+
+    <div id="main-nav">
+      <img class="nav-image" src="./IMG/likelion_main_img.png">
+      <div class="main_menu">
+          <div class="main_menu2" onclick="window.open('https:www.mju.ac.kr/sites/mjukr/intro/intro.html')">MJU</div>
+          <div class="main_menu2" onclick="window.open('https:techit.education/')">LIKELION</div>
+          <div class="main_menu2">ABOUT</div>
+          <div class="main_menu2">LOGIN</div>
+      </div>
+    </div>
+  <!-- -----------------------------------------------------[nav bar]------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------[Side Bar]---------------------------------------------------- -->
+    <aside class="side-bar">
+        <!-- <section class="side-bar__icon-box">
+          <section class="side-bar__icon-1">
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+        </section> -->
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-cat"></i>기본정보</a>
+          </li>
+          <li>
+            <a href="#gotoweb">고등학교 때 작품</a>
+          </li>
+          <li>
+            <a href="#main_page_2">김태훈 일생</a>
+          </li>
+          <li>
+            <a href="#main_page_3">김태훈에 대해(데헷)</a>
+          </li>
+        </ul>
+    </aside>
+    <!-- ------------------------------------------------------[Main Page img]---------------------------------------------------- -->
+  
+    <div id="main_page_img">
+      <img id="my_pic" alt="제 사진입뉘다..만..?" src="./IMG/뽀샤시.jpeg">
+    
+      <!-- ----------------------------[IMG JS]---------------------------- -->
+      <script type="text/javascript">
+        $(function () {
+          
+          let num = 0;
+          $("#my_pic").click(function () {
+            if(num == 0) {
+              $(this).attr("src", "./IMG/간부수련회_디코.jpeg");
+              num = 1;
+            }else if (num == 1){
+              $(this).attr("src", "./IMG/다인시치.jpeg");
+              num = 2;
+            }else {
+              $(this).attr("src", "./IMG/뽀샤시.jpeg");
+              num = 0;
+            }
+          });
+        });
+        </script>
+        <!-- ----------------------------[IMG JS]---------------------------- -->
+
+      <div> <!-- 사진 옆 공간 -->
+        <div class="basic_info">  <!-- 정보 공간 -->
+          <p class="basic_info_Q">이름:<br>나이:<br>학번:<br>학과:<br>MBTI:<br>본가:<br>거주지:<br>소속:<br>입맛:<br>키:
+            <br>친구:<br>체력:<br>돈:<br>시간:<br>열정:</p>
+
+            <p class="basic_info_A"><mark>김태훈</mark><br> &#9830;20살&#9830;<br>60241201! 큐티 샌애기..<br>
+              응용소프트웨어학과<br>INFP<br>충청북도 청주<br>명지대 기숙사ㅠ<br>멋사 백, 비대위 홍보국, BB<br>
+            초딩 입맛!<br>175<span class="want_tall">(희망)</span><br>없음.<br>없음.<br>없음.<br>없음.<br>많습니다!!!!&#x1F525;&#x1F525;</p>
+        </div>
+        
+          <div>
+            <a href="https://www.instagram.com/sleepy_encoder?igsh=YnN2d2NjYXhnbW5k&utm_source=qr" target="_blank">
+              <img class="logo" src="./IMG/instagram_logo.png">
+            </a>
+            <a href="https://open.kakao.com/o/seBBP0Af" target="_blank">
+              <img class="logo" src="./IMG/Kakao_logo.png">
+            </a>
+          </div>
+          
+      </div>
+      
+      
+      
+    </div>
+    <p class="click_please">제 사진을 클릭해보세요!</p>
+
+<!-- ------------------------------------------------------[Main Page 2]---------------------------------------------------- -->
+    <div id="main_page_2">
+
+      <a id="gotoweb" href="https:jazzy-florentine-7697f8.netlify.app" target="_blank">!클릭! -> -> 제가 만들었던 웹.. <- <- !클릭!</a><br>
+      <a>들어가셔서 메뉴의 "발표" 클릭하시면 또 다른 웹으로 이동합뉘다ㅏㅏ~!</a>
+
+      <!-- <div class="progress-container">
+        <div class="progress-bar" id="indicator"></div>
+      </div> -->
+
+      <h2 style="padding-top: 3%;">일생..!</h2>
+      <div class="gradi">
+        <h3 class="mp2_ms">2005년 청주에서 태어났습니다 따라~</h3>
+        <h3 class="mp2_ms">2012년 산"성"초등학교 입학..</h3>
+        <h3 class="mp2_ms">2018년 용"성"중학교 입학..</h3>
+        <h3 class="mp2_ms">2021년 주"성"고등학교 입학..</h3>
+        <h3 class="mp2_ms">2024년 고등학교에서 코딩에 썩어 살다가 명지대 입학..!</h3>
+        <h3 class="mp2_ms">응용 소프트웨어학과에 합격..</h3>
+        <h3 class="mp2_ms">응소 비대위에 합격!!!</h3>
+        <h3 class="mp2_ms">가녀린 소녀가 BB동아리에 출몰!</h3>
+        <h3 class="mp2_ms">멋쟁이 사차처럼에 멋지게 입단!</h3>
+        <h3 class="mp2_ms">하지만..!</h3>
+        <h3 class="mp2_ms">자기소개 웹에서는 이런저런 것들을 시도하다가..</h3>
+        <h3 class="mp2_ms">시간부족, 난이도 급상승으로 실패..!</h3>
+        <h3 class="mp2_ms"> 및 다른 할일들과 과제 폭탄에 시달리다 사망..</h3>
+      </div>
+
+    </div>
+
+<!-- ------------------------------------------------------[Main Page 3]---------------------------------------------------- -->
+    <div id="main_page_3">
+      <div style="font-size: 25px;">취미</div>
+      <div class="hoby_menu">
+
+        <div class="hoby">
+          <div class="hoby_topic">사진찍기 <span style="font-size: 8px;">(제가 찍은 사진을 클릭해보십셔)</span> </div>
+          <img class="hoby_img" id="hmp" src="./IMG/1내찍사.jpeg">
+        </div>
+
+        <script type="text/javascript">
+          $(function () {
+            
+            let num = 0;
+            $("#hmp").click(function () {
+              if(num == 0) {
+                $(this).attr("src", "./IMG/2내찍사.jpeg");
+                num = 1;
+              }else if (num == 1){
+                $(this).attr("src", "./IMG/3내찍사.jpeg");
+                num = 2;
+              }else {
+                $(this).attr("src", "./IMG/1내찍사.jpeg");
+                num = 0;
+              }
+            });
+          });
+          </script>
+
+        <div class="hoby">
+          <div class="hoby_topic">패션</div>
+          <img class="hoby_img" src="./IMG/옷좋아해요.jpeg">
+        </div>
+
+        <div class="hoby">
+          <div class="hoby_topic">애니</div>
+          <img class="hoby_img" src="./IMG/24_1분기_장송프.jpeg">
+        </div>
+
+        <div class="hoby">
+          <div class="hoby_topic">노래듣기</div>
+          <img class="hoby_img" src="./IMG/JPOP.PNG">
+        </div>
+
+        <div class="hoby">
+          <div class="hoby_topic">향수</div>
+          <img class="hoby_img" src="./IMG/JoMalone.jpeg">
+        </div>
+      </div>
+      <p>외에도 기타 연주, 칵테일, 운동, 요리 등등 많은 취미를 갖고있습니다..!</p>
+    </div>
+    
+
+
+</body>
+</html>
+
+

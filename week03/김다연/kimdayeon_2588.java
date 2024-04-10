@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class beak2588 {
+public class kimdayeon_2588 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

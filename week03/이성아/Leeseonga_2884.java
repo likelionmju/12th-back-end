@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Leeseonga_2884 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         System.out.println("알람을 설정할 시각인 H와 M을 입력하시오.");
-        int H = sc.nextInt();
-        int M = sc.nextInt();
+        int H = scn.nextInt();
+        int M = scn.nextInt();
         scn.close();
 
         if (M < 45) {

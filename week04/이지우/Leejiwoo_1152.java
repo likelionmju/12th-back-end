@@ -12,7 +12,7 @@ public class Leejiwoo_1152 {
 			if(sentence.charAt(0)==' ' || sentence.charAt(lastIndex)==' ') {
 				cnt--;
 				if(ch == ' ') {
-					cnt++;
+					cnt++; 
 				}
 				
 			}

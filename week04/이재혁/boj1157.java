@@ -3,45 +3,38 @@ package baekjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Scanner;
+
 
 public class boj1157 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        String s = br.readLine();
+        String b = br.readLine();
+        String a = b.toUpperCase();
 
-        s = s.toLowerCase();
+        int[] alpa = new int[26];
 
-        char[] arr = s.toCharArray();
-        int[] arr2 = new int[arr.length];
-
-        for (int i = 0; i < arr.length; i++) {
-            int cnt = 0;
-            for (int j = i; j < arr.length; j++) {
-                if (arr[i] == arr[j]) {
-                    cnt += 1;
-                }
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) >= 'A' && a.charAt(i) <= 'Z') {
+                alpa[a.charAt(i) - 'A'] += 1;
             }
-            arr2[i] = cnt;
         }
 
-
-        int[] sortedArr2 = Arrays.copyOf(arr2, arr2.length);
         int max = -1;
+        char result = '?';
 
-        if (sortedArr2[0] == sortedArr2[1]) {
-            System.out.println("?");
-        } else {
-            for (int i = 0; i < arr2.length; i++) {
-                if (arr2[i] > max) {
-                    max = i;
-                }
+        for (int i = 0; i < alpa.length; i++) {
+            if (alpa[i] > max) {
+                max = alpa[i];
+                result = (char) (i + 65);
+            } else if (alpa[i] == max) {
+                result = '?';
             }
-
-            System.out.println(Character.toUpperCase(arr[max]));
         }
+
+        System.out.println(result);
+
     }
+
+
 }

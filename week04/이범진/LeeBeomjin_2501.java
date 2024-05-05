@@ -1,4 +1,4 @@
-package Week04;
+package week04;
 
 import org.w3c.dom.ls.LSOutput;
 

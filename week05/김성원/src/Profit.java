@@ -4,17 +4,29 @@ public class Profit {
     public static void generateprofit(){
         int pureprofit = Main.count*1000;
 
+        int grade1 = 2000000000;
+        int grade2 = 30000000;
+        int grade3 = 1500000;
+        int grade4 = 50000;
+        int grade5 = 5000;
+
         for (int i = 0; i < Main.count; i++){
-            if(Result.lottograde[i] == 1){
-                pureprofit = pureprofit - 2000000000;
-            }else if(Result.lottograde[i] == 2){
-                pureprofit = pureprofit - 30000000;
-            }else if(Result.lottograde[i] == 3){
-                pureprofit = pureprofit - 1500000;
-            }else if(Result.lottograde[i] == 4){
-                pureprofit = pureprofit - 50000;
-            }else if(Result.lottograde[i] == 5){
-                pureprofit = pureprofit - 5000;
+            switch (Result.lottograde[i]) {
+                case 1:
+                    pureprofit -= grade1;
+                    break;
+                case 2:
+                    pureprofit -= grade2;
+                    break;
+                case 3:
+                    pureprofit -= grade3;
+                    break;
+                case 4:
+                    pureprofit -= grade4;
+                    break;
+                case 5:
+                    pureprofit -= grade5;
+                    break;
             }
         }
 

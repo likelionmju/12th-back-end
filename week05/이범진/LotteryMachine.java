@@ -21,9 +21,25 @@ public class LotteryMachine {
 		this.count = count;
 	}
 
-	
+	public int[][] drawNum() {
+		Random random = new Random();
+		lotto = new int[count][7];
+		for (int i = 0; i < count; i++) {
+			Set<Integer> drawnNumbers = new HashSet<>();
+			for (int j = 0; j < 7; j++) {
+				int num;
+				do {
+					num = random.nextInt(45) + 1;
+				} while (drawnNumbers.contains(num));
+				drawnNumbers.add(num);
+				lotto[i][j] = num;
+			}
+		}
 
-	private void compare(int[] wNum) {
+		return lotto;
+	}
+
+	public void compare(int[] wNum) {
 
 		for (int i = 0; i < lotto.length; i++) {
 			int nCount = 0;
@@ -64,7 +80,8 @@ public class LotteryMachine {
 	
 	
 	public void run() {
-		setCount(vendingMachine.deposit()); // 카운트 받아오기
+		vendingMachine.deposit();
+		setCount(vendingMachine.getCash()); // 카운트 받아오기
 		vendingMachine.showTicket(drawNum()); //발행
 		compare(winnings.getWNum()); //로또 비교하기
 		vendingMachine.showRank(rank);

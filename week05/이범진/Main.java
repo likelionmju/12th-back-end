@@ -3,12 +3,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		Winnings winnings = new Winnings();
-		VendingMachine vendigMachine = new VendingMachine();
-
-		LotteryMachine lotteryMachine = new LotteryMachine(vendigMachine, winnings);
+		LotteryMachine lotteryMachine = new LotteryMachine();
 
 		winnings.readWinnin();
-		lotteryMachine.run();
+		lotteryMachine.run(winnings.getWLotto());
 
 	}
 

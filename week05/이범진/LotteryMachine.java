@@ -1,91 +1,33 @@
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
-
 public class LotteryMachine {
+    private CashInput cashInput;
+    private NumberGenerator numberGenerator;
+    private Ticket ticket;
+    private Compare compare;
+    private Ranking ranking;
 
-	private VendingMachine vendingMachine;
-	private Winnings winnings;
+    public LotteryMachine() {
+        this.cashInput = new CashInput();
+        this.numberGenerator = new NumberGenerator();
+        this.ticket = new Ticket();
+        this.compare = new Compare();
+        this.ranking = new Ranking();
+    }
 
-	private int[][] lotto;
-	private int[] rank;
-	private int count;
-	private int realRank;
-	
-	public LotteryMachine(VendingMachine vendingMachine, Winnings winnings) {
-		this.vendingMachine = vendingMachine;
-		this.winnings = winnings;
-	}
-
-	private void setCount(int count) {
-		this.count = count;
-	}
-
-	public int[][] drawNum() {
-		Random random = new Random();
-		lotto = new int[count][7];
-		for (int i = 0; i < count; i++) {
-			Set<Integer> drawnNumbers = new HashSet<>();
-			for (int j = 0; j < 7; j++) {
-				int num;
-				do {
-					num = random.nextInt(45) + 1;
-				} while (drawnNumbers.contains(num));
-				drawnNumbers.add(num);
-				lotto[i][j] = num;
-			}
-		}
-
-		return lotto;
-	}
-
-	public void compare(int[] wNum) {
-
-		for (int i = 0; i < lotto.length; i++) {
-			int nCount = 0;
-			rank = new int[lotto.length];
-			for (int j = 0; j < lotto[i].length - 1; j++) {
-				for (int k = 0; k < wNum.length - 1; k++) {
-					if (lotto[i][j] == wNum[k]) {
-						nCount++;
-						break;
-					}
-				}
-			}
-
-			switch (nCount) {
-			case 6:
-				rank[i] = 1;
-				break;
-			case 5:
-				if (lotto[i][6] == wNum[6]) {
-					rank[i] = 2;
-				} else {
-					rank[i] = 3;
-				}
-				break;
-			case 4:
-				rank[i] = 4;
-				break;
-			case 3:
-				rank[i] = 3;
-				break;
-			default:
-				rank[i]=6;
-				break;
-			}
-		}
-	}
-
-	
-	
-	public void run() {
-		vendingMachine.deposit();
-		setCount(vendingMachine.getCash()); // 카운트 받아오기
-		vendingMachine.showTicket(drawNum()); //발행
-		compare(winnings.getWNum()); //로또 비교하기
-		vendingMachine.showRank(rank);
-		
-	}
-
+    public void run(int[] wLotto) {
+        cashInput.deposit();
+        
+       numberGenerator.setCharge(cashInput.getCharge());
+       numberGenerator.drawNum();
+       
+       ticket.setLotto(numberGenerator.getLotto());
+       ticket.showTicket();
+       
+       compare.setLotto(numberGenerator.getLotto(), wLotto);
+       compare.compare();
+       
+       ranking.setInit(cashInput.getCharge(),compare.getRank());
+       ranking.showRank();
+       
+        
+    }
 }

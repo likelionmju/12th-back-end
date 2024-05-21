@@ -1,15 +1,15 @@
 
-public class Ticket {
+public class LottoTicket {
 	
 	private int[][] lotto;
-	public Ticket() {
+	public LottoTicket() {
 	
 	}
 	
 	public void setLotto(int[][] lotto) {
 		this.lotto = lotto;
 	}
-	
+	//번호 6개까지가 정규 번호, 나머지 하나가 보너스 번호
 	public void showTicket() {
 		for (int i = 0; i < lotto.length; i++) {
 			for (int j = 0; j < lotto[i].length; j++) {

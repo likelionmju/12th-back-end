@@ -15,9 +15,12 @@ public class Result {
             int bonus = 0;  //보너스 확인하는 변수
             for (int j = 0; j < 6; j++) {
                 for (int k = 0; k < 6; k++) {
-                    if (NumberMake.lotto[i][j] == AnswerToArray.answer[k]) {
-                        cnt++;
-                    }
+                    //삼항 연산자
+                    cnt = (NumberMake.lotto[i][j] == AnswerToArray.answer[k]) ? cnt+1 : cnt;
+                    // if 문
+//                    if (NumberMake.lotto[i][j] == AnswerToArray.answer[k]) {
+//                        cnt++;
+//                    }
                 }
                 if (NumberMake.lotto[i][j] == AnswerToArray.answer[6]) {
                     bonus++;

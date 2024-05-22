@@ -7,7 +7,7 @@ import java.io.IOException;
 public class FileRead {
     BufferedReader reader;
     // 당첨번호 넣을 배열
-    private int[] ansnum = new int[7];
+    private int[] ansnum = new int[6];
     // 보너스 넘버
     private int bnum;
 

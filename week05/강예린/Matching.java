@@ -62,7 +62,7 @@ public class Matching {
     private void printPrice(FileRead fr){
         System.out.print("당첨 번호는: ");
         for (int i=0; i<fr.getAnsnum().length; i++) System.out.print(fr.getAnsnum()[i]+" ");
-        System.out.println();
+        System.out.println("+"+fr.getBnum());
         for (int i=0; i<reward.length; i++){
             System.out.println((i+1)+"등 ("+getPrice()[i]+"): "+reward[i]+"개");
             total+= price[i]*reward[i];

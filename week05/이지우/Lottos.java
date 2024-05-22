@@ -54,17 +54,13 @@ public class Lottos {
 		return issue_number_set_list;
 	}
 	*/
-	public int[] getNumArray(int idx) 
-	{
+	public int[] getNumArray(int idx) {
 		return lotto_Num[idx];
 	}
-	public int getNumofArrary(int i, int j)
-	{
+	public int getNumofArrary(int i, int j) {
 		return lotto_Num[i][j];
 	}
-	public void makeNumArray(int issue_cnt) 
-	{
+	public void makeNumArray(int issue_cnt) {
 		lotto_Num = new int[issue_cnt][6]; // 발행 매수만큼 배열 선언
-
 	}
 }

@@ -8,13 +8,11 @@ public class LottoSeller {
 	int total_profit =0;
 	float rate_of_profit=0;
 
-	public void sell_lotto()
-	{
+	public void sell_lotto() {
 		input_Money();
 		issue_Lotto();
 	}
-	public void calc_lotto()
-	{
+	public void calc_lotto() {
 		if(lm.read_JackPotNumber()) {
 			lm.check_JackPotNumber();
 			calculate_profit_rate();
@@ -44,8 +42,7 @@ public class LottoSeller {
 //
 //	}
 	
-	public int get_IssueCount()
-	{
+	public int get_IssueCount() {
 		return lm.get_num_of_lotto();
 	}
 	

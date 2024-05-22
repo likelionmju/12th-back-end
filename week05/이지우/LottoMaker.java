@@ -12,13 +12,13 @@ public class LottoMaker {
 		num_of_lotto = cnt;
 	}
 	
-	public int get_num_of_lotto()
-	{
+	public int get_num_of_lotto() {
+	
 		return num_of_lotto;
 	}
 	
-	public int get_total_profit()
-	{
+	public int get_total_profit() {
+	
 		return total_profit;
 		
 	}
@@ -108,8 +108,6 @@ public class LottoMaker {
 				}
 			}
 		}
-		
-		
 		return true;
 	}
 	
@@ -118,7 +116,11 @@ public class LottoMaker {
 		// 당첨 내역 확인
 		int match_cnt=0;
 		int bonus_cnt=0;
-		
+		float first_money = 2000000000;
+		float second_money = 30000000;
+		float third_money = 150000;
+		float fourth_money = 50000;
+		float fifth_money = 5000;
 		for(int i=0;i<num_of_lotto;i++) { // 발행 매수
 			for(int j=0;j<6;j++) { // 발행 번호 6개 비교
 				for(int k=0;k<7;k++) { // 당첨 번호 7개 비교
@@ -135,23 +137,23 @@ public class LottoMaker {
 			// 일치 번호 개수에 따른 당첨 금액 누적
 			if(match_cnt==6) {
 				System.out.println("1등 2,000,000,000원");
-				total_profit += 2000000000.0;
+				total_profit += first_money;
 			}
 			else if(match_cnt==5 && bonus_cnt==1) {
 				System.out.println("2등 30,000,000원");
-				total_profit += 30000000.0;
+				total_profit += second_money;
 			}
 			else if(match_cnt==5) {
 				System.out.println("3등 1,500,000원");
-				total_profit += 150000.0;
+				total_profit += third_money;
 			}
 			else if(match_cnt==4) {
 				System.out.println("4등 50,000원");
-				total_profit += 50000.0;
+				total_profit += fourth_money;
 			}
 			else if(match_cnt==3) {
 				System.out.println("5등 5000원");
-				total_profit += 5000.0;
+				total_profit += fifth_money;
 			}
 			
 			match_cnt=0;

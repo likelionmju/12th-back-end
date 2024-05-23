@@ -9,7 +9,6 @@ public class Lotto_Raffle extends Main{ //로또 발행하는 클래스
     int win_money = 0;
 
     public Lotto_Raffle() {}
-
     public Lotto_Raffle(int lotto_C) {
         super();
     }
@@ -21,6 +20,7 @@ public class Lotto_Raffle extends Main{ //로또 발행하는 클래스
 
         for(int i=0; i<Lotto_C; i++) { //만들어져야하는 로또만큼 반복
             ArrayList<Integer> numbers = new ArrayList<Integer>(); //arraylist 선언
+
             while (numbers.size() < 6) { // 로또 숫자 6개가 될 때까지 반복
                 int RN = Random_Setting.Random_N(); //RN에 랜덤 수 받기
 
@@ -28,7 +28,9 @@ public class Lotto_Raffle extends Main{ //로또 발행하는 클래스
                     numbers.add(RN);
                 }
             }
+
             Collections.sort(numbers); //로또번호 오름차순 정리
+
             for (int num : numbers) { //생성된 로또 번호 출력
                 System.out.print(num + " ");
             }

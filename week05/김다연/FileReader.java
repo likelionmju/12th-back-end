@@ -15,7 +15,7 @@ public class FileReader {
     }
     private ArrayList<Integer> readNumbersFromFile(String filePath) {
         ArrayList<Integer> Numbers = new ArrayList<>(6);
-
+        //7개의 숫자가 입력된 경우만 numbers에 추가
         try {
             File file = new File(filePath);
             Scanner scanner = new Scanner(file);
@@ -37,6 +37,7 @@ public class FileReader {
         return Numbers;
     }
     private int setBonusNumber() {
+        //numbers 중 6자리(마지막) 숫자만 보너스 번호로 지정
         this.bonusNumber = readNumbersFromFile(filePath).remove(6);
         return bonusNumber;
     }

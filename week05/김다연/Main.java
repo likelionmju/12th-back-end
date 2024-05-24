@@ -29,6 +29,8 @@ public class Main {
 
     public static void main(String[] args) {
         Main m = new Main();
+        return;
+        //리턴 안 하면 영원히 실행 됨
     }
 }
 

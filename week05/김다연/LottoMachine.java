@@ -30,7 +30,7 @@ public class LottoMachine {
         ArrayList<Integer> mylotto = new ArrayList<>(numbers.subList(0, TICKET_SIZE));
         //1-45 셔플 한 것 중 앞에서 6개 추출-> 내 로또 번호 mylotto
         Collections.sort(mylotto);
-
+        //내림차순 정렬
         return mylotto;
     }
     private static final ArrayList<ArrayList<Integer>> mylottos = new ArrayList<>();

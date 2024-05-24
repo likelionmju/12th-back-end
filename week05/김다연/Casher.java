@@ -18,7 +18,7 @@ public class Casher {
         } else{
             System.out.println("천 원짜리만 받습니다.");
             pay();
-        }
+        } //천원 단위로 내놓을 때까지 재귀하도록
     }
     public int getMoney() {return money;}
     //살 수 있는 로또 몇 장??

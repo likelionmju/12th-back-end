@@ -7,8 +7,10 @@ public class LottoMachine {
     private ArrayList<ArrayList<Integer>> myLottos;
     private static final int MAX_NUMBER = 45;
     private static final int TICKET_SIZE = 6;
-    public LottoMachine() {
-        this.myLottos = new ArrayList<>();
+    int numberOfticket;
+    public LottoMachine(int numberOfticket) {
+        this.numberOfticket=numberOfticket;
+        this.myLottos = autoLottos(numberOfticket);
     }
 
     // 자동으로 로또 번호를 생성하는 메소드
@@ -31,7 +33,7 @@ public class LottoMachine {
 
         return mylotto;
     }
-    private ArrayList<ArrayList<Integer>> mylottos = new ArrayList<>();
+    private static final ArrayList<ArrayList<Integer>> mylottos = new ArrayList<>();
     // 자동 로또를 구매한 수량만큼 제공하는 메소드
     public ArrayList<ArrayList<Integer>> autoLottos(int numberOfticket) {
         for (int j = 0; j < numberOfticket; j++) {
@@ -39,11 +41,6 @@ public class LottoMachine {
             //mylottos배열리스트에 로또수량만큼 autolotto 생성해서 엘리먼트로 삽입
         }
         return mylottos;
-    }
-
-    //내가 산 로또를 최종 저장하는 메소드
-    public void Lotto(int ticketCount) {
-        this.myLottos = autoLottos(ticketCount);
     }
 
     public ArrayList<ArrayList<Integer>> getMyLottos() {

@@ -5,11 +5,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ReadFile {
+public class FileReader {
     private ArrayList<Integer> winningNumbers = new ArrayList<>(6);
     private int bonusNumber;
     private static final String filePath="C:\\Users\\dayx7\\IdeaProjects\\untitled1\\src\\week05lotto\\input.txt";
-    public ReadFile(){
+    public FileReader(){
         setWinningNumbers();
         setBonusNumber();
     }

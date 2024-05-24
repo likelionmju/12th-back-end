@@ -49,8 +49,6 @@ public class FileReader {
         return winningNumbers;
     }
     public ArrayList<Integer> getWinningNumbers(){
-        this.winningNumbers = readNumbersFromFile(filePath);
-
         return winningNumbers;
     }
 

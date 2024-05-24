@@ -3,8 +3,8 @@ package week05lotto;
 import java.util.ArrayList;
 
 public class Evaluator {
-    private ArrayList<Integer> winningNumbers;
-    private int bonusNumber, numberOfticket, totalPaid;
+    private final ArrayList<Integer> winningNumbers;
+    private final int bonusNumber, numberOfticket, totalPaid;
     private Counter COUNT;
     private Casher casher;
     private LottoMachine lottoMachine;
@@ -23,26 +23,19 @@ public class Evaluator {
     }
 
     private int countMatches(ArrayList<Integer> mylotto) {
-        int matchCount = 0;
-        int bonusCount = 0;
+        int matchCount = (int) mylotto.stream()
+                .filter(winningNumbers::contains)
+                .count();
 
-        for (Integer number : mylotto) {
-            if (winningNumbers.contains(number)) {
-                matchCount++;
-            } else if (number == bonusNumber) {
-                bonusCount++;
-            }
-        }
-        if (matchCount == 5 && bonusCount == 1) {
-            matchCount++;
-        }
+        boolean hasBonus = mylotto.contains(bonusNumber);
 
-        return matchCount;
+        // 매칭된 숫자가 5개이고 보너스 번호가 포함된 경우, 6개로 취급
+        return (matchCount == 5 && hasBonus ? matchCount + 1 : matchCount);
     }
 
     int failed = 0;
 
-    private Counter evaluateLottos(ArrayList<ArrayList<Integer>> myLottos) {
+    private void evaluateLottos(ArrayList<ArrayList<Integer>> myLottos) {
         for (ArrayList<Integer> mylotto : myLottos) {
             int matchCount = countMatches(mylotto);
             Prize prize;
@@ -69,7 +62,6 @@ public class Evaluator {
             COUNT.increment(prize);
         }
 
-        return COUNT;
     }
 
     public float calculateRevenue(Counter COUNT, int totalPaid) {

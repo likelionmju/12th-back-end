@@ -12,15 +12,13 @@ public class Casher {
     public void pay(){
         Scanner sc = new Scanner(System.in);
         System.out.println("금액을 지불하세요.(1000원 단위)");
-
-        pay(sc.nextInt());
-    }
-    public void pay(int money) {
-        if (money % lottoprice != 0) {
+        money = sc.nextInt();
+        if (money % lottoprice == 0) {
+            return;
+        } else{
             System.out.println("천 원짜리만 받습니다.");
             pay();
         }
-        this.money +=money;
     }
     public int getMoney() {return money;}
     //살 수 있는 로또 몇 장??

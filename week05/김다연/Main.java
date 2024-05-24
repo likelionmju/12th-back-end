@@ -14,8 +14,8 @@ public class Main {
     public Main(){
         FileReader fileReader = new FileReader();
 
-        this.winningNumbers= fileReader.setWinningNumbers();
-        this.bonusNumber= fileReader.setBonusNumber();
+        this.winningNumbers= fileReader.getWinningNumbers();
+        this.bonusNumber= fileReader.getBonusNumber();
 
         Evaluator evaluator = new Evaluator(getWinningNumbers(), getBonusNumber());
         showWinningNumbers();

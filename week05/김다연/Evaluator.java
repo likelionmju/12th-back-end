@@ -4,10 +4,7 @@ import java.util.ArrayList;
 
 public class Evaluator {
     private ArrayList<Integer> winningNumbers;
-    private int bonusNumber;
-    private int numberOfticket;
-    private int totalPaid;
-
+    private int bonusNumber, numberOfticket, totalPaid;
     private Counter COUNT;
     private Casher casher;
     private LottoMachine lottoMachine;
@@ -25,7 +22,7 @@ public class Evaluator {
         showResults(COUNT, totalPaid);
     }
 
-    public int countMatches(ArrayList<Integer> mylotto) {
+    private int countMatches(ArrayList<Integer> mylotto) {
         int matchCount = 0;
         int bonusCount = 0;
 
@@ -45,7 +42,7 @@ public class Evaluator {
 
     int failed = 0;
 
-    public Counter evaluateLottos(ArrayList<ArrayList<Integer>> myLottos) {
+    private Counter evaluateLottos(ArrayList<ArrayList<Integer>> myLottos) {
         for (ArrayList<Integer> mylotto : myLottos) {
             int matchCount = countMatches(mylotto);
             Prize prize;
@@ -76,13 +73,14 @@ public class Evaluator {
     }
 
     public float calculateRevenue(Counter COUNT, int totalPaid) {
-        int totalWon = COUNT.getCount(Prize.FIRST) * Prize.FIRST.getAmount()
-                + COUNT.getCount(Prize.SECOND) * Prize.SECOND.getAmount()
-                + COUNT.getCount(Prize.THIRD) * Prize.THIRD.getAmount()
-                + COUNT.getCount(Prize.FOURTH) * Prize.FOURTH.getAmount()
-                + COUNT.getCount(Prize.FIFTH) * Prize.FIFTH.getAmount();
+        int totalWon = 0;
+        for (Prize prize : Prize.values()) {
+            if (prize != Prize.NONE) {
+                totalWon += COUNT.getCount(prize) * prize.getAmount();
+            }
+        }
 
-        return (totalPaid -totalWon) / (float) totalPaid;
+        return (totalPaid - totalWon) / (float) totalPaid;
     }
 
     public void showResults(Counter COUNT, int totalPaid) {

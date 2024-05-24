@@ -13,7 +13,7 @@ public class FileReader {
         setWinningNumbers();
         setBonusNumber();
     }
-    public ArrayList<Integer> readNumbersFromFile(String filePath) {
+    private ArrayList<Integer> readNumbersFromFile(String filePath) {
         ArrayList<Integer> Numbers = new ArrayList<>(6);
 
         try {
@@ -36,13 +36,22 @@ public class FileReader {
 
         return Numbers;
     }
-    public int setBonusNumber() {
+    private int setBonusNumber() {
         this.bonusNumber = readNumbersFromFile(filePath).remove(6);
         return bonusNumber;
     }
-    public ArrayList<Integer> setWinningNumbers(){
+    public int getBonusNumber(){
+        return bonusNumber;
+    }
+    private ArrayList<Integer> setWinningNumbers(){
         this.winningNumbers = readNumbersFromFile(filePath);
 
         return winningNumbers;
     }
+    public ArrayList<Integer> getWinningNumbers(){
+        this.winningNumbers = readNumbersFromFile(filePath);
+
+        return winningNumbers;
+    }
+
 }

@@ -68,8 +68,8 @@ public class Evaluator {
 
     public float calculateRevenue(Counter COUNT, int totalPaid) {
     //수익률 계산 (당첨된 갯수*당첨금)/(받은 돈 총합)
-        float revenue = (COUNT.getFifth() * PRIZES[5] + COUNT.getFourth() * PRIZES[4] + COUNT.getThird() * PRIZES[3]
-                + COUNT.getSecond() * PRIZES[2] + COUNT.getFirst() * PRIZES[1]) / (float) totalPaid;
+        float revenue = (totalPaid- (COUNT.getFifth() * PRIZES[5] + COUNT.getFourth() * PRIZES[4] + COUNT.getThird() * PRIZES[3]
+                + COUNT.getSecond() * PRIZES[2] + COUNT.getFirst() * PRIZES[1])) / (float) totalPaid;
         return revenue;
     }
 

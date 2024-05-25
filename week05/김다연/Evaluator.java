@@ -15,13 +15,13 @@ public class Evaluator {
 
         this.casher = new Casher();
         this.numberOfticket = casher.ticket();
-        this.totalPaid = this.numberOfticket * Casher.lottoprice;
+        this.totalPaid = this.numberOfticket * casher.lottoprice;
         this.lottoMachine = new LottoMachine(numberOfticket);
         this.COUNT = new Counter();
         evaluateLottos(lottoMachine.getMyLottos());
         showResults(COUNT, totalPaid);
     }
-
+    boolean hasBonus;
     private int countMatches(ArrayList<Integer> mylotto) {
         int matchCount = (int) mylotto.stream()
                 .filter(winningNumbers::contains)
@@ -29,10 +29,10 @@ public class Evaluator {
         //mylotto에 있는 숫자 중 winningNumbers에 포함된 것만 filter
                 //포함된 숫자의 수를 셈
 
-        boolean hasBonus = mylotto.contains(bonusNumber);
+        this.hasBonus = mylotto.contains(bonusNumber);
 
         // 매칭된 숫자가 5개이고 보너스 번호가 포함된 경우, 6개로 취급
-        return (matchCount == 5 && hasBonus ? matchCount + 1 : matchCount);
+        return matchCount;
     }
 
     int failed = 0;
@@ -47,7 +47,7 @@ public class Evaluator {
                     prize = Prize.FIRST;
                     break;
                 case 5:
-                    prize = mylotto.contains(bonusNumber) ? Prize.SECOND : Prize.THIRD;
+                    prize = hasBonus ? Prize.SECOND : Prize.THIRD;
                     break;
                 case 4:
                     prize = Prize.FOURTH;

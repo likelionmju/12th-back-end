@@ -1,46 +1,19 @@
 package week05lotto;
 
 public class Counter {
-    //당첨 수량 저장소
-    private  int fifth=0,fourth = 0,third = 0,second = 0,first = 0;
+    private int[] counts;
 
-    public int getFifth() {
-        return fifth;
-    }
-    public void setFifth(int fifth) {
-        this.fifth = fifth;
-    }
-    public int getFourth() {
-        return fourth;
+    public Counter() {
+        counts = new int[Prize.values().length];
     }
 
-    public void setFourth(int fourth) {
-        this.fourth = fourth;
+    public void increment(Prize prize) {
+        counts[prize.ordinal()]++;
+        //count는 0~5까지 있는 배열
+        //match 한만큼 count 해당 배열 자리에 ++
     }
 
-    public int getThird() {
-        return third;
+    public int getCount(Prize prize) {
+        return counts[prize.ordinal()];
     }
-
-    public void setThird(int third) {
-        this.third = third;
-    }
-
-    public int getSecond() {
-        return second;
-    }
-
-    public void setSecond(int second) {
-        this.second = second;
-    }
-
-    public int getFirst() {
-        return first;
-    }
-
-    public void setFirst(int first){
-        this.first =  first;
-    }
-
-
 }

@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="57a9beca-3153-492a-ba57-ec3cfe859259" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/CompareTickets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/IncomeRate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/InputMoney.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/LottoTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/LottoTickets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/MakeLotto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/이성아/newlotto/src/winning.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +70,9 @@
       <workItem from="1712741908552" duration="176000" />
       <workItem from="1715321343158" duration="652000" />
       <workItem from="1716265008599" duration="599000" />
+      <workItem from="1716374148899" duration="339000" />
+      <workItem from="1716374502242" duration="553000" />
+      <workItem from="1716972353475" duration="378000" />
     </task>
     <servers />
   </component>

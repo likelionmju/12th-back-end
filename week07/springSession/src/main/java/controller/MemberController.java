@@ -30,7 +30,7 @@ public class MemberController {
 
         System.out.println("member = " + member.getName());
 
-        memberService.jion(member);
+        memberService.join(member);
         return "redirect:/";
     }
 

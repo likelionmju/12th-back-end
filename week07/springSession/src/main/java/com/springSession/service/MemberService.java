@@ -12,7 +12,7 @@ public class MemberService {
         this.memberRepository = memberRepository;
     }
 
-    public Long jion(Member member){
+    public Long join(Member member){
         validateDuplicateMember(member);
         memberRepository.save(member);
         return member.getId();

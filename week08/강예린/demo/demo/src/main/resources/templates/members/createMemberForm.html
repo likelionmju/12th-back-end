@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    )
+    <!-- form- action에 적힌 곳으로 post 방식으로 넘어감 -->
+    <form action="/members/new" method="post">
+        <div
+                class="form-group">
+            <label
+                    for="name">이름</label>
+            <!-- 스프링이 알아서 "name" 인 필드를 찾아 setter로 MemberForm에 name에 넣어줌 -->
+            <input
+                    type="text" id="name" name="name" placeholder="이름을 입력하세요">
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>

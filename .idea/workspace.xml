@@ -5,32 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a9beca-3153-492a-ba57-ec3cfe859259" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/week07/이성아/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/Lion0529Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/MemberForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/domain/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/repository/MemoryMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/static/hello-static.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/hello-template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/members/memberList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/test/java/com/example/lion0529/Lion0529ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/t-검정표에서" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week09/강예린/proxy/Cash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week09/강예린/proxy/CashPerf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week09/강예린/proxy/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week09/강예린/proxy/LogExecutionTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week09/강예린/proxy/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week09/강예린/proxy/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week09/강예린/proxy/StoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,44 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/leeseonga/12th-back-end/week07",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/leeseonga/12th-back-end/week07&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="12th-back-end" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="12th-back-end" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -112,6 +72,10 @@
       <workItem from="1718769234330" duration="85000" />
       <workItem from="1718769339035" duration="3965000" />
       <workItem from="1718784074132" duration="1171000" />
+      <workItem from="1719746773869" duration="600000" />
+      <workItem from="1719747381200" duration="41000" />
+      <workItem from="1719747485711" duration="285000" />
+      <workItem from="1719901541842" duration="68000" />
     </task>
     <servers />
   </component>

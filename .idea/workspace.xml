@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57a9beca-3153-492a-ba57-ec3cfe859259" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/week07/이성아/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/Lion0529Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/controller/MemberForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/domain/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/repository/MemoryMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/java/com/example/lion0529/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/static/hello-static.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/hello-template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/main/resources/templates/members/memberList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week07/이성아/src/test/java/com/example/lion0529/Lion0529ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="57a9beca-3153-492a-ba57-ec3cfe859259" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +30,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/leeseonga/12th-back-end/week07",
+    "last_opened_file_path": "/Users/leeseonga/12th-back-end/week08",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +39,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week08" />
+      <recent name="$PROJECT_DIR$/week07" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="12th-back-end" />
@@ -111,7 +89,9 @@
       <workItem from="1716974058685" duration="243000" />
       <workItem from="1718769234330" duration="85000" />
       <workItem from="1718769339035" duration="3965000" />
-      <workItem from="1718784074132" duration="1171000" />
+      <workItem from="1718784074132" duration="1482000" />
+      <workItem from="1719334895719" duration="2060000" />
+      <workItem from="1719401254437" duration="1485000" />
     </task>
     <servers />
   </component>

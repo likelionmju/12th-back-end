@@ -1,8 +1,7 @@
-package com.example.jdbc.Controller;
-//import org.springframework.beans.factory.annotation.Autowired;
+package com.example.jpa.Controller;
 
-import com.example.jdbc.Entity.Post;
-import com.example.jdbc.Service.PostService;
+import com.example.jpa.Entity.Post;
+import com.example.jpa.Service.PostService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/posts")
 
-public class likeController {
+public class PostController {
   @Autowired
   private PostService postService;
 

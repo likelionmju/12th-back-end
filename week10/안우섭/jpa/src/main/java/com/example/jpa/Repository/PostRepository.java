@@ -1,6 +1,6 @@
-package com.example.jdbc.Repository;
+package com.example.jpa.Repository;
 
-import com.example.jdbc.Entity.Post;
+import com.example.jpa.Entity.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

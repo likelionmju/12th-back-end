@@ -1,7 +1,7 @@
-package com.example.jdbc.Service;
+package com.example.jpa.Service;
 
-import com.example.jdbc.Entity.Post;
-import com.example.jdbc.Repository.PostRepository;
+import com.example.jpa.Entity.Post;
+import com.example.jpa.Repository.PostRepository;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,15 +9,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PostService {
-@Autowired
-    private PostRepository postRepository;
+  @Autowired
+  private PostRepository postRepository;
 
-    public List<Post> getAllPosts(){
-      return postRepository.findAll();
-    }
+  public List<Post> getAllPosts(){
+    return postRepository.findAll();
+  }
+
 
   public void createPost(Post post) {
-      this.postRepository.save(post);
+    this.postRepository.save(post);
 
   }
   // Update 메서드

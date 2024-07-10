@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.3.0'
+    id 'io.spring.dependency-management' version '1.1.5'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.assertj:assertj-core:3.22.0")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testImplementation("org.assertj:assertj-core:3.24.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    testImplementation("org.assertj:assertj-core:3.22.0")
+//    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.h2database:h2'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation ('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}
+
+//buildscript {
+//    dependencies {
+//        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.7.0")
+//    }
+//}

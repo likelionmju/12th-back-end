@@ -1,4 +1,7 @@
 package com.example.jdbcdemoleal.Config;
+import com.example.jdbcdemoleal.repository.PostRepository;
+import com.example.jdbcdemoleal.repository.PostRepositoryImpl;
+import com.example.jdbcdemoleal.service.PostService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -19,5 +22,14 @@ public class config {
     @Bean
     public JdbcTemplate jdbcTemplate(DataSource dataSource) {
         return new JdbcTemplate(dataSource);
+    }
+    @Bean
+    public PostRepository postRepository(JdbcTemplate jdbcTemplate) {
+        return new PostRepositoryImpl(jdbcTemplate);
+    }
+
+    @Bean
+    public PostService postService(PostRepository postRepository) {
+        return new PostService(postRepository);
     }
 }

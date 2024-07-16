@@ -1,6 +1,7 @@
 package com.example.jdbcdemoleal.service;
 import com.example.jdbcdemoleal.entity.Post;
 import com.example.jdbcdemoleal.repository.PostRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import java.util.List;
 public class PostService {
     private final PostRepository postRepository;
 
+    @Autowired
     public PostService(PostRepository postRepository) {
         this.postRepository = postRepository;
     }
